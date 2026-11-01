@@ -307,3 +307,129 @@
     height: 50px;
   }
 }
+
+/* About page: source-style full-width introduction and circular strengths */
+.about-page-layout {
+  display: block;
+  max-width: 1240px;
+  padding-top: 58px;
+}
+
+.about-page-layout .page-outline {
+  display: none;
+}
+
+.about-page-layout .migrated-content {
+  width: 100%;
+}
+
+.about-original-body > .about-intro-copy {
+  max-width: 1160px;
+  margin-bottom: 48px;
+  color: #486278;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.about-intro-copy p + p {
+  margin-top: 16px;
+}
+
+.about-strengths {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 42px;
+  margin-top: 8px;
+}
+
+.about-strength {
+  min-width: 0;
+}
+
+.about-strength-image {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 27px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 50%;
+  background: #eef4fa;
+  cursor: zoom-in;
+}
+
+.about-strength-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(22, 78, 124, 0.1);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.about-strength-image img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  object-fit: cover;
+  transition: transform 450ms ease;
+}
+
+.about-strength-image:hover img {
+  transform: scale(1.045);
+}
+
+.about-strength h3 {
+  color: #53616d;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-strength p {
+  max-width: 330px;
+  margin: 13px auto 0;
+  color: #667d90;
+  font-size: 13px;
+  line-height: 1.9;
+  text-align: left;
+}
+
+@media (max-width: 1050px) {
+  .about-strengths {
+    gap: 25px;
+  }
+
+  .about-strength-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-page-layout {
+    padding-top: 38px;
+  }
+
+  .about-original-body > .about-intro-copy {
+    margin-bottom: 38px;
+    font-size: 14px;
+  }
+
+  .about-strengths {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .about-strength-image {
+    width: 210px;
+    height: 210px;
+  }
+
+  .about-strength p {
+    max-width: 430px;
+  }
+}
