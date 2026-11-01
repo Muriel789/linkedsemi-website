@@ -323,6 +323,20 @@
   width: 100%;
 }
 
+.company-page-layout {
+  display: block;
+  max-width: 1240px;
+  padding-top: 58px;
+}
+
+.company-page-layout .page-outline {
+  display: none;
+}
+
+.company-page-layout .migrated-content {
+  width: 100%;
+}
+
 .about-original-body > .about-intro-copy {
   max-width: 1160px;
   margin-bottom: 48px;
@@ -411,6 +425,10 @@
 
 @media (max-width: 800px) {
   .about-page-layout {
+    padding-top: 38px;
+  }
+
+  .company-page-layout {
     padding-top: 38px;
   }
 
