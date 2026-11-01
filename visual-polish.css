@@ -2699,12 +2699,12 @@ body:has(.career-choice-page) main {
 
 .career-choice-campus:before {
   background-image: url("assets/official/538b65530a29.png");
-  filter: grayscale(0.35);
-  opacity: 0.18;
+  filter: grayscale(0.2) contrast(1.04);
+  opacity: 0.55;
 }
 
 .career-choice-campus:after {
-  background: linear-gradient(110deg, rgba(244, 249, 252, 0.98) 0%, rgba(244, 249, 252, 0.82) 58%, rgba(244, 249, 252, 0.48) 100%);
+  background: linear-gradient(110deg, rgba(244, 249, 252, 0.94) 0%, rgba(244, 249, 252, 0.68) 55%, rgba(244, 249, 252, 0.12) 100%);
 }
 
 .career-choice-social {
