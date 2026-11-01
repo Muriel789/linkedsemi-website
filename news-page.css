@@ -1,3 +1,9 @@
+.news-page-hero {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/3eca3454cace.png") center / cover no-repeat;
+}
+
 .news-page-section {
   padding: 62px 0 78px;
 }
