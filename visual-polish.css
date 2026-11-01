@@ -533,6 +533,10 @@
   grid-template-columns: 1fr;
 }
 
+.page-hero.hero-solution .page-hero-grid {
+  grid-template-columns: 1fr;
+}
+
 .hero-product-center {
   background:
     linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
