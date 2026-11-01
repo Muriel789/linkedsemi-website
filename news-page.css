@@ -2,6 +2,11 @@
   padding: 62px 0 78px;
 }
 
+.news-feature,
+.news-page-card {
+  scroll-margin-top: 100px;
+}
+
 .news-page-heading {
   display: flex;
   align-items: flex-end;
