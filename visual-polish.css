@@ -2344,17 +2344,17 @@ body:has(.document-center) main {
   align-self: start;
   overflow: hidden;
   padding: 25px 22px;
-  border: 1px solid rgba(160, 199, 228, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 10px;
-  background: linear-gradient(155deg, rgba(228, 242, 253, 0.92) 0%, rgba(203, 226, 244, 0.88) 52%, rgba(185, 214, 238, 0.84) 100%);
-  backdrop-filter: blur(18px) saturate(1.15);
-  -webkit-backdrop-filter: blur(18px) saturate(1.15);
-  box-shadow: 0 18px 42px rgba(31, 77, 112, 0.1);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.72) 0%, rgba(238, 244, 249, 0.55) 100%);
+  backdrop-filter: blur(20px) saturate(1.08);
+  -webkit-backdrop-filter: blur(20px) saturate(1.08);
+  box-shadow: 0 22px 50px rgba(24, 50, 72, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
 .document-sidebar > p {
   margin: 0 0 16px;
-  color: #b05f10;
+  color: #a2641e;
   font-size: 10px;
   letter-spacing: 1.6px;
 }
@@ -2363,15 +2363,16 @@ body:has(.document-center) main {
   padding: 13px 12px;
   border: 0;
   border-radius: 4px;
-  color: #1e4463;
+  color: #2d4a5f;
   font-size: 13px;
   transition: background 0.2s, color 0.2s;
 }
 
 .document-sidebar > a:hover,
 .document-sidebar > a.selected {
-  background: rgba(255, 255, 255, 0.92);
-  color: #123a59;
+  background: rgba(255, 255, 255, 0.85);
+  color: #16303f;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
 }
 
 .document-sidebar > a.selected {
@@ -2381,12 +2382,12 @@ body:has(.document-center) main {
 .document-sidebar .document-tip {
   margin-top: 20px;
   padding: 15px;
-  border: 1px solid rgba(170, 204, 230, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.65);
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  color: #48657c;
+  color: #4f6575;
   font-size: 10px;
 }
 
@@ -2394,40 +2395,46 @@ body:has(.document-center) main {
   gap: 12px;
   margin-bottom: 15px;
   padding: 16px;
-  border: 1px solid rgba(160, 200, 230, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 9px;
-  background: linear-gradient(120deg, rgba(224, 240, 252, 0.94) 0%, rgba(198, 226, 245, 0.88) 100%);
-  backdrop-filter: blur(16px) saturate(1.12);
-  -webkit-backdrop-filter: blur(16px) saturate(1.12);
-  box-shadow: 0 12px 28px rgba(40, 100, 150, 0.08);
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) 0%, rgba(232, 240, 247, 0.42) 100%);
+  backdrop-filter: blur(18px) saturate(1.06);
+  -webkit-backdrop-filter: blur(18px) saturate(1.06);
+  box-shadow: 0 14px 34px rgba(24, 50, 72, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
 .document-toolbar input {
   padding: 15px 18px;
-  border: 2px solid #b7d8ef;
+  border: 1px solid rgba(126, 158, 184, 0.45);
   border-radius: 5px;
-  background: #eef7ff;
-  color: #123a59;
+  background: rgba(255, 255, 255, 0.55);
+  color: #16303f;
   box-shadow: inset 0 1px 2px rgba(31, 77, 112, 0.05);
   font-size: 13px;
 }
 
+.document-toolbar input:focus {
+  border-color: rgba(95, 134, 163, 0.8);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(95, 134, 163, 0.12);
+}
+
 .document-toolbar select {
-  border: 1px solid rgba(183, 216, 239, 0.9);
+  border: 1px solid rgba(126, 158, 184, 0.35);
   border-radius: 5px;
-  background: rgba(238, 247, 255, 0.9);
-  color: #1f4463;
+  background: rgba(255, 255, 255, 0.55);
+  color: #2d4a5f;
 }
 
 .filter-status {
   display: inline-flex;
   padding: 7px 11px;
-  border: 1px solid rgba(170, 204, 230, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 20px;
-  background: rgba(240, 248, 255, 0.75);
+  background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  color: #47657b;
+  color: #4f6575;
   font-size: 10px;
 }
 
@@ -2444,66 +2451,71 @@ body:has(.document-center) main {
   gap: 14px;
   min-height: 112px;
   padding: 19px;
-  border: 1px solid rgba(222, 190, 132, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 7px;
-  background: rgba(255, 241, 214, 0.82);
-  backdrop-filter: blur(12px) saturate(1.08);
-  -webkit-backdrop-filter: blur(12px) saturate(1.08);
-  box-shadow: 0 10px 24px rgba(120, 84, 30, 0.05);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.6), rgba(246, 248, 250, 0.38));
+  backdrop-filter: blur(16px) saturate(1.05);
+  -webkit-backdrop-filter: blur(16px) saturate(1.05);
+  box-shadow: 0 14px 34px rgba(24, 50, 72, 0.055), inset 0 1px 0 rgba(255, 255, 255, 0.85);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .document-row:hover {
   transform: translateY(-3px);
-  border-color: #d9b877;
-  background: rgba(255, 246, 226, 0.92);
-  box-shadow: 0 14px 30px rgba(120, 84, 30, 0.09);
+  border-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.78), rgba(246, 249, 252, 0.5));
+  box-shadow: 0 20px 40px rgba(24, 50, 72, 0.09), inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .document-row-official {
-  border-color: rgba(139, 187, 223, 0.85);
-  background: linear-gradient(145deg, rgba(222, 240, 253, 0.9), rgba(193, 222, 244, 0.82));
-  backdrop-filter: blur(12px) saturate(1.1);
-  -webkit-backdrop-filter: blur(12px) saturate(1.1);
-  box-shadow: 0 12px 28px rgba(40, 100, 150, 0.09);
+  border-color: rgba(255, 255, 255, 0.78);
+  background: linear-gradient(150deg, rgba(248, 251, 253, 0.62), rgba(235, 242, 248, 0.42));
+  box-shadow:
+    inset 3px 0 0 rgba(95, 134, 163, 0.55),
+    0 14px 34px rgba(24, 50, 72, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
 .document-row-official:hover {
-  border-color: #7db6dc;
-  background: linear-gradient(145deg, rgba(233, 246, 255, 0.96), rgba(204, 230, 248, 0.9));
-  box-shadow: 0 14px 30px rgba(40, 100, 150, 0.13);
+  border-color: rgba(255, 255, 255, 0.95);
+  background: linear-gradient(150deg, rgba(252, 254, 255, 0.8), rgba(236, 245, 251, 0.55));
+  box-shadow:
+    inset 3px 0 0 rgba(95, 134, 163, 0.7),
+    0 20px 40px rgba(24, 50, 72, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .document-row-official .document-info strong {
-  color: #133f60;
+  color: #16303f;
 }
 
 .document-row-official .document-info small {
-  color: #4f7290;
+  color: #5a6f80;
 }
 
 .document-row-official .document-icon {
-  border-color: #c3def1;
-  background: #d7ecfa;
-  color: #1c608c;
+  border-color: rgba(255, 255, 255, 0.9);
+  background: rgba(210, 228, 241, 0.9);
+  color: #426f8f;
 }
 
 .document-row-official .document-action {
-  background: #cfe8fa;
-  color: #155f8f;
+  border-color: rgba(255, 255, 255, 0.9);
+  background: rgba(222, 235, 244, 0.9);
+  color: #3f6b8a;
 }
 
 .document-icon {
   width: 46px;
   height: 52px;
-  border: 1px solid rgba(222, 190, 132, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 5px;
-  background: #fbe9ca;
-  color: #94601a;
+  background: rgba(226, 235, 242, 0.85);
+  color: #5b7282;
 }
 
 .document-info strong {
-  color: #14384f;
+  color: #16303f;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.55;
@@ -2511,16 +2523,17 @@ body:has(.document-center) main {
 
 .document-info small {
   margin-top: 6px;
-  color: #5f7689;
+  color: #5a6f80;
   font-size: 10px;
 }
 
 .document-action {
   align-self: center;
   padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 20px;
-  background: #ffefd6;
-  color: #9a550b;
+  background: rgba(240, 244, 248, 0.85);
+  color: #506877;
   font-size: 10px;
 }
 
