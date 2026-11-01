@@ -1,0 +1,94 @@
+.application-card.real-application {
+  min-height: 330px;
+  color: #fff;
+  background: #0c2940;
+}
+
+.real-application img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.82) contrast(1.04);
+  transition: transform 650ms ease, filter 650ms ease;
+}
+
+.real-application:hover img {
+  transform: scale(1.06);
+  filter: saturate(0.98) contrast(1.04);
+}
+
+.real-application::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(4, 22, 41, 0.32), transparent 28%),
+    linear-gradient(0deg, rgba(2, 24, 45, 0.94) 0%, rgba(2, 24, 45, 0.34) 39%, transparent 66%);
+}
+
+.real-application .app-number {
+  z-index: 2;
+  top: 23px;
+  left: 23px;
+  color: #fff;
+  font-size: 8px;
+}
+
+.real-application .app-card-content {
+  z-index: 2;
+  bottom: 29px;
+  left: 23px;
+  right: 23px;
+}
+
+.real-application .app-card-content h3 {
+  color: #fff;
+  font-size: 21px;
+}
+
+.real-application .app-card-content p {
+  color: #d6e2ec;
+  font-size: 11px;
+  margin-top: 12px;
+}
+
+.real-application .round-arrow {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
+@media (max-width: 800px) {
+  .application-card.real-application {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .application-card.real-application {
+    min-height: 260px;
+  }
+
+  .real-application .app-number {
+    top: 16px;
+    left: 15px;
+  }
+
+  .real-application .app-card-content {
+    left: 15px;
+    right: 15px;
+    bottom: 21px;
+  }
+
+  .real-application .app-card-content h3 {
+    font-size: 17px;
+  }
+
+  .real-application .app-card-content p {
+    font-size: 9px;
+  }
+}
