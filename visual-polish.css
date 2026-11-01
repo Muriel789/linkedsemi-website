@@ -42,6 +42,42 @@
   color: #fff;
 }
 
+.footer-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-wechat {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-left: 24px;
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.footer-wechat-qr {
+  display: block;
+  width: 66px;
+  height: 66px;
+  flex: none;
+  background: #fff;
+  object-fit: cover;
+}
+
+.footer-wechat p {
+  margin: 0;
+}
+
+.footer-wechat strong {
+  display: block;
+  color: #f5f8fb;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
 .footer-official-logo {
   display: block;
   width: 190px;
@@ -280,6 +316,28 @@
     height: 70px;
   }
 
+  .footer-brand-group {
+    width: 100%;
+    gap: 18px;
+  }
+
+  .site-footer .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    width: 100%;
+    justify-content: start;
+    gap: 15px 24px;
+  }
+
+  .footer-wechat {
+    padding-left: 18px;
+  }
+
+  .footer-wechat-qr {
+    width: 58px;
+    height: 58px;
+  }
+
   .footer-logo-mark {
     width: 35px;
     height: 35px;
@@ -346,6 +404,30 @@
 }
 
 @media (max-width: 480px) {
+  .footer-brand-group {
+    gap: 14px;
+  }
+
+  .footer-official-logo {
+    width: 130px;
+    height: 55px;
+  }
+
+  .footer-wechat {
+    gap: 8px;
+    padding-left: 14px;
+  }
+
+  .footer-wechat-qr {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-wechat strong {
+    font-size: 10px;
+    letter-spacing: 0.03em;
+  }
+
   .solution-tile-image.real-photo {
     height: 190px;
     min-height: 190px;
