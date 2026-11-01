@@ -1,0 +1,201 @@
+/* Developer resources */
+.resources {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #eaf0f6;
+  background:
+    linear-gradient(90deg, rgba(248, 251, 254, 0.98) 0%, rgba(248, 251, 254, 0.94) 44%, rgba(236, 245, 251, 0.88) 100%),
+    url("assets/factory.jpg") right center / cover no-repeat;
+}
+
+.resources > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.resources .resource-links a {
+  padding: 18px 18px 18px 24px;
+  background: rgba(255, 255, 255, 0.72);
+  border-left-color: rgba(128, 157, 181, 0.32);
+  border-radius: 3px;
+  backdrop-filter: blur(5px);
+}
+
+.resources .resource-links a > span:last-child {
+  top: 22px;
+  right: 16px;
+}
+
+/* Company advantages */
+.home-advantages {
+  position: relative;
+  overflow: hidden;
+  padding: 58px 0 62px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 252, 254, 0.95) 48%, rgba(237, 246, 252, 0.9) 100%),
+    url("assets/wafer.jpg") right center / cover no-repeat;
+  border-top: 1px solid #eaf0f6;
+}
+
+.home-advantages::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 48%, rgba(5, 28, 50, 0.08));
+  pointer-events: none;
+}
+
+.home-advantages > .container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.9fr;
+  gap: 65px;
+  align-items: start;
+}
+
+.home-advantages .advantage-heading {
+  position: static;
+  min-height: 0;
+  max-width: 400px;
+  margin: 0;
+  text-align: left;
+}
+
+.home-advantages .advantage-watermark {
+  position: static;
+  display: block;
+  margin-bottom: 10px;
+  color: #9aa8b3;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  opacity: 1;
+  text-transform: uppercase;
+  transform: none;
+  white-space: normal;
+}
+
+.home-advantages .advantage-heading h2 {
+  padding: 0;
+  color: #102f51;
+  font-size: 28px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.home-advantages .advantage-heading > p:last-child {
+  max-width: 400px;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.home-advantages .advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  max-width: none;
+  margin: 0;
+  align-items: start;
+}
+
+.home-advantages .advantage-item,
+.home-advantages .advantage-item:first-child,
+.home-advantages .advantage-item:last-child {
+  display: block;
+  min-height: 0;
+  padding: 6px 0 6px 26px;
+  border: 0;
+  border-left: 1px solid var(--line);
+  text-align: left;
+}
+
+.home-advantages .advantage-icon,
+.home-advantages .advantage-icon.icon-chip,
+.home-advantages .advantage-icon.icon-code,
+.home-advantages .advantage-icon.icon-sales {
+  width: 34px;
+  height: 34px;
+  display: block;
+  margin: 0 0 18px;
+  color: #2d5f87;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  clip-path: none;
+}
+
+.home-advantages .advantage-icon svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.45;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-advantages .advantage-item h3 {
+  color: #173a5d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.home-advantages .advantage-item p {
+  max-width: 280px;
+  margin-top: 9px;
+  color: #7d8f9e;
+  font-size: 10px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .resources .resource-links a {
+    padding: 17px 16px 17px 19px;
+  }
+
+  .home-advantages {
+    padding: 50px 0 55px;
+  }
+
+  .home-advantages > .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .home-advantages .advantage-heading {
+    max-width: 620px;
+  }
+
+  .home-advantages .advantage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-advantages .advantage-item,
+  .home-advantages .advantage-item:first-child,
+  .home-advantages .advantage-item:last-child {
+    padding: 17px 0 17px 18px;
+    border-left: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .home-advantages .advantage-item:first-child {
+    border-top: 1px solid var(--line);
+  }
+
+  .home-advantages .advantage-item:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-advantages .advantage-heading h2 {
+    font-size: 25px;
+  }
+}
