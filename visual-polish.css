@@ -36,6 +36,42 @@
   letter-spacing: 1.5px;
 }
 
+.footer-brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.footer-logo-mark {
+  width: 40px;
+  height: 40px;
+  flex: none;
+}
+
+.footer-logo-mark svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-logo-word {
+  color: #fff;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1;
+}
+
+.footer-logo-cn {
+  margin-left: 12px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  white-space: nowrap;
+}
+
 .footer-nav {
   gap: 30px;
 }
@@ -226,6 +262,24 @@
 
   .footer-nav {
     gap: 20px;
+  }
+
+  .footer-brand-lockup {
+    gap: 9px;
+  }
+
+  .footer-logo-mark {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer-logo-word {
+    font-size: 21px;
+  }
+
+  .footer-logo-cn {
+    margin-left: 7px;
+    font-size: 12px;
   }
 
   .solution-tile-image.real-photo {
