@@ -436,6 +436,67 @@
   margin-left: 0;
 }
 
+/* Original wide banner backgrounds for content sections */
+.image-hero {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-product-center {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/161d190c5dba.jpg") center / cover no-repeat;
+}
+
+.hero-product-mcu {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/161d190c5dba.jpg") center / cover no-repeat;
+}
+
+.hero-product-lm6 {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/48915865cdf8.jpg") center / cover no-repeat;
+}
+
+.hero-product-ble {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/36f4e38c9458.jpg") center / cover no-repeat;
+}
+
+.hero-product-ec {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/4ce3f39dceda.jpg") center / cover no-repeat;
+}
+
+.hero-product-sio {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/b74ed8b4e021.jpg") center / cover no-repeat;
+}
+
+.hero-solution {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/3eca3454cace.png") center / cover no-repeat;
+}
+
+.hero-support {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/70fd2985278a.png") center / cover no-repeat;
+}
+
+.hero-docs {
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    url("assets/official/adeebc1196bb.png") center / cover no-repeat;
+}
+
 .about-page-layout .content-section-heading {
   justify-content: center;
   text-align: center;
