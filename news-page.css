@@ -1,6 +1,6 @@
 .news-page-hero {
   background:
-    linear-gradient(90deg, rgba(5, 28, 52, 0.94), rgba(5, 28, 52, 0.5)),
+    linear-gradient(90deg, rgba(3, 14, 26, 0.88) 0%, rgba(3, 14, 26, 0.58) 48%, rgba(3, 14, 26, 0.12) 100%),
     url("assets/news-riscv.webp") center 52% / cover no-repeat;
 }
 
