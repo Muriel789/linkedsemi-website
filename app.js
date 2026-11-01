@@ -34,3 +34,8 @@ if(solutionArticle){
     link.innerHTML=`${label}<span aria-hidden="true">→</span>`;
   });
 }
+// Highlight the active document category without changing the shared static markup.
+$$('.document-sidebar > a').forEach(link=>{
+  const normalize=path=>path.replace(/\/index\.html$/,'/').replace(/\/$/,'');
+  if(normalize(new URL(link.href,location.href).pathname)===normalize(location.pathname))link.classList.add('selected');
+});
