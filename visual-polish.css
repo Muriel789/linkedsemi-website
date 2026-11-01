@@ -2621,3 +2621,232 @@ body:has(.document-center) main {
     margin-top: -2px;
   }
 }
+
+/* Careers entry */
+body:has(.career-choice-page) main {
+  background: linear-gradient(180deg, #fff 0, #f4f8fc 48%, #fff 100%);
+}
+
+.career-choice-page {
+  padding: 58px 0 84px;
+}
+
+.career-choice-heading {
+  max-width: 780px;
+}
+
+.career-choice-heading h2 {
+  margin-top: 9px;
+  color: #123b5b;
+  font-size: 34px;
+  line-height: 1.45;
+}
+
+.career-choice-heading > p:last-child {
+  max-width: 680px;
+  margin-top: 15px;
+  color: #6f8495;
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+.career-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.career-choice-card {
+  position: relative;
+  display: flex;
+  min-height: 385px;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  padding: 40px;
+  border: 1px solid #dce6ef;
+  border-radius: 12px;
+  isolation: isolate;
+}
+
+.career-choice-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+}
+
+.career-choice-card:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.career-choice-campus {
+  background: #eef4f8;
+  color: #284e6b;
+  cursor: not-allowed;
+}
+
+.career-choice-campus:before {
+  background-image: url("assets/official/538b65530a29.png");
+  filter: grayscale(0.35);
+  opacity: 0.18;
+}
+
+.career-choice-campus:after {
+  background: linear-gradient(110deg, rgba(244, 249, 252, 0.98) 0%, rgba(244, 249, 252, 0.82) 58%, rgba(244, 249, 252, 0.48) 100%);
+}
+
+.career-choice-social {
+  border-color: #0c3655;
+  color: #fff;
+  box-shadow: 0 18px 42px rgba(9, 47, 76, 0.13);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.career-choice-social:before {
+  background-image: url("assets/official/814f399c2a97.jpg");
+  opacity: 0.5;
+}
+
+.career-choice-social:after {
+  background: linear-gradient(100deg, rgba(5, 32, 53, 0.96) 0%, rgba(8, 49, 77, 0.87) 58%, rgba(11, 61, 95, 0.48) 100%);
+}
+
+.career-choice-social:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 52px rgba(9, 47, 76, 0.19);
+}
+
+.career-choice-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.career-choice-index {
+  position: absolute;
+  top: 22px;
+  right: 30px;
+  color: rgba(73, 111, 139, 0.13);
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.career-choice-social .career-choice-index {
+  color: rgba(255, 255, 255, 0.12);
+}
+
+.career-choice-status {
+  display: inline-flex;
+  min-height: 27px;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid #c9d8e5;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  color: #7b91a3;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+
+.career-choice-social .career-choice-status {
+  border-color: rgba(255, 186, 111, 0.45);
+  background: rgba(255, 173, 80, 0.12);
+  color: #ffb562;
+}
+
+.career-choice-card .eyebrow {
+  margin-top: 45px;
+  color: #c97419;
+}
+
+.career-choice-social .eyebrow {
+  color: #ffb15e;
+}
+
+.career-choice-card h2 {
+  margin-top: 16px;
+  color: #173f60;
+  font-size: 36px;
+}
+
+.career-choice-social h2 {
+  color: #fff;
+}
+
+.career-choice-card p:not(.eyebrow) {
+  max-width: 490px;
+  margin-top: 15px;
+  color: #61798d;
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+.career-choice-social p:not(.eyebrow) {
+  color: #d2e0ea;
+}
+
+.career-choice-foot {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  padding-top: 28px;
+  color: #98611f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.career-choice-social .career-choice-foot {
+  color: #ffb15e;
+}
+
+@media (max-width: 800px) {
+  .career-choice-page {
+    padding: 38px 0 56px;
+  }
+
+  .career-choice-heading h2 {
+    font-size: 27px;
+  }
+
+  .career-choice-grid {
+    grid-template-columns: 1fr;
+    margin-top: 26px;
+  }
+
+  .career-choice-card {
+    min-height: 330px;
+    padding: 30px 25px;
+  }
+
+  .career-choice-card .eyebrow {
+    margin-top: 34px;
+  }
+
+  .career-choice-index {
+    right: 23px;
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-choice-heading h2 {
+    font-size: 24px;
+  }
+
+  .career-choice-card {
+    min-height: 310px;
+    padding: 26px 22px;
+  }
+
+  .career-choice-card h2 {
+    font-size: 31px;
+  }
+}
