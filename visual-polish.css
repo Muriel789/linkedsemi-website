@@ -39,8 +39,15 @@
 .footer-brand-lockup {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
   color: #fff;
+}
+
+.footer-official-logo {
+  display: block;
+  width: 190px;
+  height: 80px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .footer-logo-mark {
@@ -265,7 +272,12 @@
   }
 
   .footer-brand-lockup {
-    gap: 9px;
+    gap: 0;
+  }
+
+  .footer-official-logo {
+    width: 165px;
+    height: 70px;
   }
 
   .footer-logo-mark {
