@@ -323,6 +323,30 @@
   width: 100%;
 }
 
+.about-page-hero .page-hero-grid {
+  display: block;
+  min-height: 190px;
+  text-align: center;
+}
+
+.about-page-hero .breadcrumbs {
+  justify-content: center;
+}
+
+.about-page-hero .page-hero-lines {
+  display: none;
+}
+
+.about-page-hero .page-lead {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-page-layout .content-section-heading {
+  justify-content: center;
+  text-align: center;
+}
+
 .company-page-layout {
   display: block;
   max-width: 1240px;
