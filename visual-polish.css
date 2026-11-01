@@ -497,6 +497,21 @@
     url("assets/official/adeebc1196bb.png") center / cover no-repeat;
 }
 
+/* Keep directional cues on text links and primary actions only. */
+.card-arrow,
+.round-arrow,
+.catalog-card-copy h3 > span,
+.model-grid a > b,
+.support-card h2 > span,
+.support-workflow a > b,
+.solution-tile-copy h2 > span,
+.site-search-item > span:last-child,
+.catalog-item > span:last-child,
+.search-item > span:last-child,
+.related-links a > span:last-child {
+  display: none !important;
+}
+
 .page-hero.compact {
   padding-top: 18px;
   padding-bottom: 40px;
