@@ -1,0 +1,69 @@
+/* Refined contact-to-footer transition and brand lockup */
+.contact-strip {
+  padding: 38px 0;
+  background: linear-gradient(90deg, #edf5fb 0%, #e5f0fa 100%);
+}
+
+.site-footer {
+  padding: 42px 0 24px;
+  background: linear-gradient(180deg, #10263b 0%, #0b1a2a 100%);
+}
+
+.footer-main {
+  padding-bottom: 32px;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.site-footer .official-brand {
+  gap: 15px;
+  padding-left: 16px;
+  border-left: 3px solid var(--orange);
+}
+
+.site-footer .official-brand img {
+  width: 126px;
+  height: 50px;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  filter: brightness(0) invert(1);
+  opacity: 0.96;
+}
+
+.site-footer .official-brand .brand-name {
+  color: #f5f8fb;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.footer-nav {
+  gap: 30px;
+}
+
+.footer-nav a {
+  color: #c9d5df;
+}
+
+.footer-mail {
+  color: #cbd8e2;
+}
+
+.footer-bottom {
+  color: #91a4b5;
+  padding-top: 23px;
+}
+
+@media (max-width: 800px) {
+  .site-footer .official-brand {
+    padding-left: 13px;
+  }
+
+  .site-footer .official-brand img {
+    width: 112px;
+    height: 46px;
+  }
+
+  .footer-nav {
+    gap: 20px;
+  }
+}
