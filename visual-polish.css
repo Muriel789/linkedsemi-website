@@ -740,29 +740,21 @@
 }
 
 .culture-values-original {
-  margin-top: 88px;
+  margin-top: 72px;
   text-align: center;
 }
 
-.values-watermark {
-  display: block;
-  color: rgba(161, 159, 159, 0.84);
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 1;
-}
-
 .culture-values-original h2 {
-  position: relative;
-  margin-top: -37px;
-  color: rgba(90, 89, 89, 0.84);
-  font-size: 26px;
+  margin: 0;
+  color: #102f51;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 .culture-values-original p {
-  margin-top: 13px;
-  color: #5f7589;
-  font-size: 13px;
+  margin-top: 14px;
+  color: #536b80;
+  font-size: 14px;
   line-height: 1.8;
 }
 
@@ -780,13 +772,8 @@
     margin-top: 58px;
   }
 
-  .values-watermark {
-    font-size: 46px;
-  }
-
   .culture-values-original h2 {
-    margin-top: -28px;
-    font-size: 23px;
+    font-size: 24px;
   }
 }
 
