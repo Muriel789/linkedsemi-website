@@ -497,6 +497,36 @@
     url("assets/official/adeebc1196bb.png") center / cover no-repeat;
 }
 
+.page-hero.compact {
+  padding-top: 18px;
+  padding-bottom: 40px;
+}
+
+.page-hero.compact .page-hero-grid {
+  min-height: 150px;
+}
+
+.page-hero.compact .breadcrumbs {
+  padding-bottom: 27px;
+}
+
+.page-hero.compact h1 {
+  font-size: 36px;
+}
+
+.page-hero.compact .page-lead {
+  margin-top: 18px;
+}
+
+.company-page-hero {
+  padding-top: 19px;
+  padding-bottom: 43px;
+}
+
+.company-page-hero .page-hero-grid {
+  min-height: 190px;
+}
+
 .about-page-layout .content-section-heading {
   justify-content: center;
   text-align: center;
@@ -835,6 +865,41 @@
 
   .culture-values-grid > div:last-child {
     border-bottom: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .page-hero.compact {
+    padding-top: 15px;
+    padding-bottom: 32px;
+  }
+
+  .page-hero.compact .page-hero-grid {
+    min-height: 132px;
+  }
+
+  .page-hero.compact h1 {
+    font-size: 32px;
+  }
+
+  .company-page-hero {
+    padding-top: 15px;
+    padding-bottom: 34px;
+  }
+
+  .company-page-hero .page-hero-grid {
+    min-height: 165px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero.compact h1 {
+    font-size: 28px;
+  }
+
+  .page-hero.compact .page-hero-grid,
+  .company-page-hero .page-hero-grid {
+    min-height: 112px;
   }
 }
 
