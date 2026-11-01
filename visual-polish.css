@@ -1666,6 +1666,7 @@
 }
 
 .migrated-content.solution > #section-1 {
+  border: 0;
   background: linear-gradient(145deg, #f3f8fd 0%, #fff 72%);
 }
 
