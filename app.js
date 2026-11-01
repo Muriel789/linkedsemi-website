@@ -19,3 +19,18 @@ if($('#document-search')){const input=$('#document-search'),select=$('#document-
 if($('.hero')){const slides=[{title:'让芯片<span>连接</span>世界',subtitle:'专注 MCU 与解决方案及生态建设',description:'以高可靠性、低功耗与高性能芯片技术，<br>赋能智能终端与关键设备。',image:'wafer.jpg',link:'/products/index.html',cta:'探索产品'},{title:'高效计算，<span>精准</span>掌控',subtitle:'MCU 产品家族 · 为可靠而设计',description:'从 LM3050 到 RISC-V 架构的 LM6050，<br>探索面向控制与计算的芯片产品。',image:'lm3050-board-hd.webp',link:'/products/index.html',cta:'探索 MCU'},{title:'更低功耗，<span>更多</span>连接',subtitle:'低功耗蓝牙 SoC · 连接智能生活',description:'LE5010、LE5110 与 LE5030 产品家族，<br>让无线连接融入更多应用场景。',image:'home-smart.webp',link:'/products/bluetooth-low-energy-chips.html',cta:'探索蓝牙 SoC'}];let lm3050ImageData;function loadLm3050Image(){if(!lm3050ImageData){lm3050ImageData=Promise.all(Array.from({length:5},(_,i)=>fetch(toUrl(`assets/lm3050-parts/part${i+1}.txt`)).then(r=>{if(!r.ok)throw new Error('LM3050 image segment failed to load');return r.text();}))).then(parts=>parts.join(''));}return lm3050ImageData;}let index=0,paused=matchMedia('(prefers-reduced-motion:reduce)').matches;function render(i){index=(i+slides.length)%slides.length;const s=slides[index];$('#hero-title').innerHTML=s.title;$('#hero-subtitle').textContent=s.subtitle;$('#hero-description').innerHTML=s.description;if(s.image==='lm3050-hero.webp'){const requestedIndex=index;loadLm3050Image().then(data=>{if(index===requestedIndex&&slides[index].image==='lm3050-hero.webp')$('.hero-image').style.backgroundImage=`url(\"data:image/webp;base64,${data}\")`;}).catch(()=>{});}else{$('.hero-image').style.backgroundImage=`url('${toUrl('assets/'+s.image)}')`;}$('.hero-cta').href=toUrl(s.link);$('#hero-cta-text').textContent=s.cta;$('#slide-current').textContent=String(index+1).padStart(2,'0');$$('[data-slide]').forEach((b,j)=>{b.classList.toggle('selected',j===index);b.setAttribute('aria-current',String(j===index));});}function pauseState(){$('.pause-button').textContent=paused?'▷':'Ⅱ';$('.pause-button').setAttribute('aria-label',paused?'播放轮播':'暂停轮播');}$$('[data-slide]').forEach(b=>b.addEventListener('click',()=>render(Number(b.dataset.slide))));$$('[data-direction]').forEach(b=>b.addEventListener('click',()=>render(index+Number(b.dataset.direction))));$('.pause-button').addEventListener('click',()=>{paused=!paused;pauseState();});setInterval(()=>{if(!paused&&!document.hidden&&!dialog.open&&!$('.hero').matches(':hover')&&!$('.hero').contains(document.activeElement))render(index+1);},8000);render(0);pauseState();}
 // Add a discoverable hint before wide product tables without changing source data.
 $$('.table-scroll').forEach(w=>{if(w.querySelectorAll('tr:first-child th,tr:first-child td').length>8){const p=document.createElement('p');p.className='table-hint';p.textContent='完整参数表可横向滚动查看 →';w.before(p);}});
+// Turn legacy pipe-separated solution requirements and action links into consistent UI elements.
+const solutionArticle=$('.migrated-content.solution');
+if(solutionArticle){
+  const requirementText=$('#section-2 .section-body > p',solutionArticle);
+  if(requirementText&&requirementText.textContent.includes('|')){
+    const list=document.createElement('div');list.className='solution-req-list';
+    requirementText.textContent.split('|').map(x=>x.trim()).filter(Boolean).forEach(text=>{const item=document.createElement('span');item.textContent=text;list.append(item);});
+    requirementText.replaceWith(list);
+  }
+  $$('.section-body > p > a',solutionArticle).forEach(link=>{
+    const label=link.closest('#section-3')?'查看产品详情':'查看应用方案';
+    link.classList.add('solution-action-link');
+    link.innerHTML=`${label}<span aria-hidden="true">→</span>`;
+  });
+}
