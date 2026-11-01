@@ -396,6 +396,34 @@
   margin-left: auto;
 }
 
+.company-page-hero {
+  padding-top: 25px;
+  padding-bottom: 58px;
+  background:
+    linear-gradient(90deg, rgba(5, 28, 52, 0.96) 0%, rgba(5, 28, 52, 0.88) 45%, rgba(5, 28, 52, 0.48) 100%),
+    url("assets/official/3f799b5fe34a.jpg") center / cover no-repeat;
+}
+
+.company-page-hero .page-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 235px;
+  text-align: left;
+}
+
+.company-page-hero .breadcrumbs {
+  justify-content: flex-start;
+}
+
+.company-page-hero .page-hero-lines {
+  display: none;
+}
+
+.company-page-hero .page-lead {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .about-page-layout .content-section-heading {
   justify-content: center;
   text-align: center;
